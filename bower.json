@@ -1,0 +1,30 @@
+{
+  "name": "disdo",
+  "main": "disdo.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/volkovasystems/disdo",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "description": "Transform any human readable alphanumeric string divided by certain characters into space separated form. Latin word for spread.",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "disdo",
+    "spread",
+    "space-separated-string"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "harden": "~0.1.7"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "disdo",
+  "version": "0.0.0",
+  "description": "Transform any human readable alphanumeric string divided by certain characters into space separated form. Latin word for spread.",
+  "main": "disdo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/disdo.git"
+  },
+  "keywords": [
+    "spread",
+    "space-separated-string",
+    "disdo"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/disdo/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/disdo#readme",
+  "dependencies": {
+    "harden": "^0.1.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "mocha": "^2.2.5",
+    "pita": "^0.2.0",
+    "unit.js": "^2.0.0"
+  }
+}
