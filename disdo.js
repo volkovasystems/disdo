@@ -68,6 +68,12 @@ var disdo = function disdo( text ){
 		@end-meta-configuration
 	*/
 
+	if( !text ){
+		return text;
+	}
+
+	text = text.replace( CLEAN_PATTERN, "" );
+
 	if( disdo.TEXT_PATTERN.test( text ) ){
 		return text.replace( disdo.TERM_PATTERN,
 			function onReplaced( match, divideCharacter ){
@@ -93,6 +99,9 @@ harden.bind( disdo )
 	( "TERM_PATTERN",
 		/^[a-zA-Z0-9]|([-_ ])[a-zA-Z0-9]/g );
 
+harden.bind( disdo )
+	( "CLEAN_PATTERN",
+		/[^\-\_\$a-zA-Z0-9 ]/g );
 
 if( typeof module != "undefined" ){ 
 	module.exports = disdo; 
