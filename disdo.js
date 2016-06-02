@@ -1,8 +1,12 @@
+"use strict";
+
 /*:
 	@module-license:
 		The MIT License (MIT)
+		@mit-license
 
-		Copyright (c) 2014 Richeve Siodina Bebedor
+		Copyright (@c) 2016 Richeve Siodina Bebedor
+		@email: richeve.bebedor@gmail.com
 
 		Permission is hereby granted, free of charge, to any person obtaining a copy
 		of this software and associated documentation files (the "Software"), to deal
@@ -25,14 +29,14 @@
 
 	@module-configuration:
 		{
-			"packageName": "disdo",
-			"fileName": "disdo.js",
-			"moduleName": "disdo",
-			"authorName": "Richeve S. Bebedor",
-			"authorEMail": "richeve.bebedor@gmail.com",
-			"repository": "git@github.com:volkovasystems/disdo.git",
-			"testCase": "disdo-test.js",
-			"isGlobal": true
+			"package": "disdo",
+			"file": "disdo.js",
+			"module": "disdo",
+			"author": "Richeve S. Bebedor",
+			"eMail": "richeve.bebedor@gmail.com",
+			"repository": "https://github.com/volkovasystems/disdo.git",
+			"test": "disdo-test.js",
+			"global": true
 		}
 	@end-module-configuration
 
@@ -47,16 +51,14 @@
 	@end-include
 */
 
-if( !( typeof window != "undefined" &&
-	"harden" in window ) )
-{
+if( typeof window != "undefined" ){
 	var harden = require( "harden" );
 }
 
-if( typeof window != "undefined" && 
+if( typeof window != "undefined" &&
 	!( "harden" in window ) )
 {
-	throw new Error( "harden is not defined" ); 
+	throw new Error( "harden is not defined" );
 }
 
 var disdo = function disdo( text ){
@@ -92,25 +94,14 @@ var disdo = function disdo( text ){
 };
 
 harden.bind( disdo )
-	( "TEXT_PATTERN",
-		/^(?:[a-zA-Z0-9][a-zA-Z0-9]*[-_ ])*[a-zA-Z0-9][a-zA-Z0-9]*.*$/ );
+	( "TEXT_PATTERN", /^(?:[a-zA-Z0-9][a-zA-Z0-9]*[-_ ])*[a-zA-Z0-9][a-zA-Z0-9]*.*$/ );
 
 harden.bind( disdo )
-	( "TERM_PATTERN",
-		/^[a-zA-Z0-9]|([-_ ])[a-zA-Z0-9]/g );
+	( "TERM_PATTERN", /^[a-zA-Z0-9]|([-_ ])[a-zA-Z0-9]/g );
 
 harden.bind( disdo )
-	( "CLEAN_PATTERN",
-		/[^\-\_\$a-zA-Z0-9 ]/g );
+	( "CLEAN_PATTERN", /[^\-\_\$a-zA-Z0-9 ]/g );
 
-if( typeof module != "undefined" ){ 
-	module.exports = disdo; 
-}
-
-if( typeof global != "undefined" ){
-	harden
-		.bind( disdo )( "globalize", 
-			function globalize( ){
-				harden.bind( global )( "disdo", disdo );
-			} );
+if( typeof module != "undefined" ){
+	module.exports = disdo;
 }
