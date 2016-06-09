@@ -51,7 +51,7 @@
 	@end-include
 */
 
-if( typeof window != "undefined" ){
+if( typeof window == "undefined" ){
 	var harden = require( "harden" );
 }
 
