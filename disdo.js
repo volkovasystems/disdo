@@ -74,7 +74,7 @@ var disdo = function disdo( text ){
 		return text;
 	}
 
-	text = text.replace( CLEAN_PATTERN, "" );
+	text = text.replace( disdo.CLEAN_PATTERN, "" );
 
 	if( disdo.TEXT_PATTERN.test( text ) ){
 		return text.replace( disdo.TERM_PATTERN,
