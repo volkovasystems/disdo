@@ -1,6 +1,6 @@
 {
   "name": "disdo",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Transform any human readable alphanumeric string divided by certain characters into space separated form. Latin word for spread.",
   "main": "disdo.js",
   "scripts": {

@@ -1,6 +1,6 @@
 "use strict";
 
-/*:
+/*;
 	@module-license:
 		The MIT License (MIT)
 		@mit-license
@@ -62,7 +62,7 @@ if( typeof window != "undefined" &&
 }
 
 var disdo = function disdo( text ){
-	/*:
+	/*;
 		@meta-configuration:
 			{
 				"text:required": "string"
