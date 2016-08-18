@@ -30,6 +30,7 @@
 	@module-configuration:
 		{
 			"package": "disdo",
+			"path": "disdo/disdo.js",
 			"file": "disdo.js",
 			"module": "disdo",
 			"author": "Richeve S. Bebedor",
@@ -41,7 +42,7 @@
 	@end-module-configuration
 
 	@module-documentation:
-
+		All special characters on the beginning of the non-alphanumeric word will be discarded.
 	@end-module-documentation
 
 	@include:
@@ -70,37 +71,34 @@ var disdo = function disdo( text ){
 		@end-meta-configuration
 	*/
 
-	if( !text ){
+	if( !text ||
+		text === "" ||
+		typeof text != "string" )
+	{
 		return text;
 	}
 
-	text = text.replace( disdo.CLEAN_PATTERN, "" );
-
-	if( disdo.TEXT_PATTERN.test( text ) ){
-		return text.replace( disdo.TERM_PATTERN,
-			function onReplaced( match, divideCharacter ){
-
-				if( divideCharacter && divideCharacter != " " ){
-					return match.replace( divideCharacter, " " );
-
-				}else{
-					return match;
-				}
-			} );
-
-	}else{
-		return text;
-	}
+	return text
+		.replace( disdo.CLEAN_PATTERN, " " )
+		.replace( disdo.UPPERCASE_PATTERN,
+			function onReplace( match ){
+				return match.replace( match, " " + match );
+			} )
+		.replace( disdo.SPACE_PATTERN, " " )
+		.replace( disdo.DROP_PATTERN, "" );
 };
 
 harden.bind( disdo )
-	( "TEXT_PATTERN", /^(?:[a-zA-Z0-9][a-zA-Z0-9]*[-_ ])*[a-zA-Z0-9][a-zA-Z0-9]*.*$/ );
+	( "CLEAN_PATTERN", /[^a-zA-Z0-9]+/g );
 
 harden.bind( disdo )
-	( "TERM_PATTERN", /^[a-zA-Z0-9]|([-_ ])[a-zA-Z0-9]/g );
+	( "UPPERCASE_PATTERN", /[A-Z0-9]+/g );
 
 harden.bind( disdo )
-	( "CLEAN_PATTERN", /[^\-\_\$a-zA-Z0-9 ]/g );
+	( "SPACE_PATTERN", /\s+/g );
+
+harden.bind( disdo )
+	( "DROP_PATTERN", /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g );
 
 if( typeof module != "undefined" ){
 	module.exports = disdo;
