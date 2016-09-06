@@ -1,6 +1,6 @@
 {
   "name": "disdo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transform any human readable alphanumeric string divided by certain characters into space separated form. Latin word for spread.",
   "main": "disdo.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/volkovasystems/disdo#readme",
   "dependencies": {
-    "harden": "^0.3.3"
+    "harden": "^0.3.5"
   }
 }
