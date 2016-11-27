@@ -47,22 +47,18 @@
 
 	@include:
 		{
-			"harden": "harden"
+			"falzy": "falzy",
+			"harden": "harden",
+			"protype": "protype"
 		}
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var harden = require( "harden" );
-}
+const falzy = require( "falzy" );
+const harden = require( "harden" );
+const protype = require( "protype" );
 
-if( typeof window != "undefined" &&
-	!( "harden" in window ) )
-{
-	throw new Error( "harden is not defined" );
-}
-
-var disdo = function disdo( text ){
+const disdo = function disdo( text ){
 	/*;
 		@meta-configuration:
 			{
@@ -71,10 +67,7 @@ var disdo = function disdo( text ){
 		@end-meta-configuration
 	*/
 
-	if( !text ||
-		text === "" ||
-		typeof text != "string" )
-	{
+	if( falzy( text ) || !protype( text, STRING ) ){
 		return text;
 	}
 
@@ -88,18 +81,10 @@ var disdo = function disdo( text ){
 		.replace( disdo.DROP_PATTERN, "" );
 };
 
-harden.bind( disdo )
-	( "CLEAN_PATTERN", /[^a-zA-Z0-9]+/g );
+harden
+	.bind( disdo )( "CLEAN_PATTERN", /[^a-zA-Z0-9]+/g )
+	.harden( "UPPERCASE_PATTERN", /[A-Z]+/g )
+	.harden( "SPACE_PATTERN", /\s+/g )
+	.harden( "DROP_PATTERN", /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g );
 
-harden.bind( disdo )
-	( "UPPERCASE_PATTERN", /[A-Z0-9]+/g );
-
-harden.bind( disdo )
-	( "SPACE_PATTERN", /\s+/g );
-
-harden.bind( disdo )
-	( "DROP_PATTERN", /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g );
-
-if( typeof module != "undefined" ){
-	module.exports = disdo;
-}
+module.exports = disdo;
