@@ -57,37 +57,28 @@
 	@end-include
 */
 
-const falzy = require( "falzy" );
-const harden = require( "harden" );
-const protype = require( "protype" );
+var falzy = require("falzy");
+var harden = require("harden");
+var protype = require("protype");
 
-const disdo = function disdo( text ){
+var disdo = function disdo(text) {
 	/*;
-		@meta-configuration:
-			{
-				"text:required": "string"
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"text:required": "string"
+ 		}
+ 	@end-meta-configuration
+ */
 
-	if( falzy( text ) || !protype( text, STRING ) ){
+	if (falzy(text) || !protype(text, STRING)) {
 		return text;
 	}
 
-	return text
-		.replace( disdo.CLEAN_PATTERN, " " )
-		.replace( disdo.UPPERCASE_PATTERN,
-			function onReplace( match ){
-				return match.replace( match, " " + match );
-			} )
-		.replace( disdo.SPACE_PATTERN, " " )
-		.replace( disdo.DROP_PATTERN, "" );
+	return text.replace(disdo.CLEAN_PATTERN, " ").replace(disdo.UPPERCASE_PATTERN, function onReplace(match) {
+		return match.replace(match, " " + match);
+	}).replace(disdo.SPACE_PATTERN, " ").replace(disdo.DROP_PATTERN, "");
 };
 
-harden
-	.bind( disdo )( "CLEAN_PATTERN", /[^a-zA-Z0-9]+/g )
-	.harden( "UPPERCASE_PATTERN", /[A-Z]+/g )
-	.harden( "SPACE_PATTERN", /\s+/g )
-	.harden( "DROP_PATTERN", /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g );
+harden.bind(disdo)("CLEAN_PATTERN", /[^a-zA-Z0-9]+/g).harden("UPPERCASE_PATTERN", /[A-Z]+/g).harden("SPACE_PATTERN", /\s+/g).harden("DROP_PATTERN", /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g);
 
 module.exports = disdo;
