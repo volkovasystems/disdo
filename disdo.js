@@ -51,15 +51,18 @@
 	@include:
 		{
 			"falzy": "falzy",
-			"harden": "harden",
 			"protype": "protype"
 		}
 	@end-include
 */
 
 const falzy = require( "falzy" );
-const harden = require( "harden" );
 const protype = require( "protype" );
+
+const CLEAN_PATTERN = /[^a-zA-Z0-9]+/g;
+const UPPERCASE_PATTERN = /[A-Z]+/g;
+const SPACE_PATTERN = /\s+/g;
+const DROP_PATTERN = /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g;
 
 const disdo = function disdo( text ){
 	/*;
@@ -75,19 +78,10 @@ const disdo = function disdo( text ){
 	}
 
 	return text
-		.replace( disdo.CLEAN_PATTERN, " " )
-		.replace( disdo.UPPERCASE_PATTERN,
-			function onReplace( match ){
-				return match.replace( match, " " + match );
-			} )
-		.replace( disdo.SPACE_PATTERN, " " )
-		.replace( disdo.DROP_PATTERN, "" );
+		.replace( CLEAN_PATTERN, " " )
+		.replace( UPPERCASE_PATTERN, ( match ) => { return match.replace( match, ` ${ match }` ); } )
+		.replace( SPACE_PATTERN, " " )
+		.replace( DROP_PATTERN, "" );
 };
-
-harden
-	.bind( disdo )( "CLEAN_PATTERN", /[^a-zA-Z0-9]+/g )
-	.harden( "UPPERCASE_PATTERN", /[A-Z]+/g )
-	.harden( "SPACE_PATTERN", /\s+/g )
-	.harden( "DROP_PATTERN", /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g );
 
 module.exports = disdo;
