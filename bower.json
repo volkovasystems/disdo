@@ -1,9 +1,7 @@
 {
   "name": "disdo",
-  "version": "0.6.0",
-  "main": "disdo.js",
-  "support": "disdo.support.js",
-  "deploy": "disdo.deploy.js",
+  "version": "0.7.0",
+  "main": "disdo.deploy.js",
   "homepage": "https://github.com/volkovasystems/disdo",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
@@ -28,7 +26,7 @@
     "tests"
   ],
   "dependencies": {
-    "falzy": "^0.10.0",
-    "protype": "^0.11.0"
+    "falzy": "^0.11.0",
+    "protype": "^0.15.0"
   }
 }
