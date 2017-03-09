@@ -1,6 +1,6 @@
 {
   "name": "disdo",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Transform any human readable alphanumeric string divided by certain characters into space separated form. Latin word for spread.",
   "main": "disdo.js",
   "support": "disdo.support.js",
@@ -30,8 +30,8 @@
   "homepage": "https://github.com/volkovasystems/disdo#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "falzy": "^0.14.0",
-    "protype": "^0.18.0"
+    "falzy": "^0.15.0",
+    "protype": "^0.19.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
