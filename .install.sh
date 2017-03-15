@@ -14,4 +14,5 @@ webpack \
 bower install \
 falzy \
 protype \
---save
+--save \
+--force-latest
