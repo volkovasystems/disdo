@@ -45,6 +45,9 @@
               	@end-module-configuration
               
               	@module-documentation:
+              		Transform any human readable alphanumeric string divided by certain characters
+              			into space separated form. Latin word for spread.
+              
               		All special characters on the beginning of the non-alphanumeric word will be discarded.
               	@end-module-documentation
               
@@ -77,8 +80,7 @@ var disdo = function disdo(text) {
 		return text;
 	}
 
-	return text.
-	replace(CLEAN_PATTERN, " ").
+	return text.replace(CLEAN_PATTERN, " ").
 	replace(UPPERCASE_PATTERN, function (match) {return match.replace(match, " " + match);}).
 	replace(SPACE_PATTERN, " ").
 	replace(DROP_PATTERN, "");
