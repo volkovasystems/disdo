@@ -1,11 +1,15 @@
-"use strict";
 
+const assert = require( "assert" );
 const disdo = require( "./disdo.js" );
 
-console.log( disdo( "hello-world" ) );
+assert.equal( disdo( "hello-world" ), "hello world", "should have value 'hello world'" );
 
-console.log( disdo( "hello_world" ) );
+assert.equal( disdo( "hello_world" ), "hello world", "should have value 'hello world'" );
 
-console.log( disdo( "helloWorld" ) );
+assert.equal( disdo( "helloWorld" ), "hello World", "should have value 'hello world'" );
 
-console.log( disdo( "hello world" ) );
+assert.equal( disdo( "hello world" ), "hello world", "should have value 'hello world'" );
+
+assert.equal( disdo( "hello World" ), "hello World", "should have value 'hello World'" );
+
+console.log( "ok" );
