@@ -34,10 +34,11 @@
               			"file": "disdo.js",
               			"module": "disdo",
               			"author": "Richeve S. Bebedor",
-              			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-              			],
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/disdo.git",
               			"test": "disdo-test.js",
               			"global": true
@@ -54,13 +55,11 @@
               	@include:
               		{
               			"falzy": "falzy",
-              			"protype": "protype"
               		}
               	@end-include
               */
 
 var falzy = require("falzy");
-var protype = require("protype");
 
 var CLEAN_PATTERN = /[^a-zA-Z0-9]+/g;
 var UPPERCASE_PATTERN = /[A-Z]+/g;
@@ -76,7 +75,7 @@ var disdo = function disdo(text) {
                                   	@end-meta-configuration
                                   */
 
-	if (falzy(text) || !protype(text, STRING)) {
+	if (falzy(text) || typeof text != "string") {
 		return text;
 	}
 
