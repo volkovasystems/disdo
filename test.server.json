@@ -1,0 +1,88 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-07-31T10:38:04.424Z",
+    "end": "2017-07-31T10:38:04.433Z",
+    "duration": 9
+  },
+  "tests": [
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello-world\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello_world\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"helloWorld\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello world\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello World\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello-world\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello_world\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"helloWorld\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello world\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'hello world'",
+      "fullTitle": "disdo \"disdo( \"hello World\" )\" should have value 'hello world'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
