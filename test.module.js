@@ -119,7 +119,7 @@ describe("disdo", ( ) => {
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe("disdo", ( ) => {
 
@@ -170,56 +170,93 @@ describe("disdo", ( ) => {
 
 //: @bridge:
 
+describe( "disdo", ( ) => {
 
-describe("disdo", ( ) => {
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( `"disdo( "hello-world" )"`, ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return disdo( "hello-world" );
+				}
+
+			).value;
+
+			assert.equal( result, "hello world" );
+
+		} );
+	} );
+
+	describe( `"disdo( "hello_world" )"`, ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return disdo( "hello_world" );
+				}
+
+			).value;
+
+			assert.equal( result, "hello world" );
+
+		} );
+	} );
+
+	describe( `"disdo( "helloWorld" )"`, ( ) => {
+		it( "should be equal to 'hello World'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return disdo( "helloWorld" );
+				}
+
+			).value;
+
+			assert.equal( result, "hello World" );
+
+		} );
+	} );
+
+	describe( `"disdo( "hello world" )"`, ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return disdo( "hello world" );
+				}
+
+			).value;
+
+			assert.equal( result, "hello world" );
+
+		} );
+	} );
+
+	describe( `"disdo( "hello World" )"`, ( ) => {
+		it( "should be equal to 'hello World'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return disdo( "hello World" );
+				}
+
+			).value;
+
+			assert.equal( result, "hello World" );
+
+		} );
+	} );
+
+} );
 
 
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
-
-	describe(`"disdo( "hello-world" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
-
-			assert.equal( disdo( true, true ) );
-
-		});
-	});
-
-	describe(`"disdo( "hello_world" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
-
-			assert.equal( disdo( true, true ) );
-
-		});
-	});
-
-	describe(`"disdo( "helloWorld" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
-
-			assert.equal(disdo( true, true ) );
-
-		});
-	});
-
-	describe(`"disdo( "hello world" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
-
-			assert.equal(disdo( true, true ) );
-
-		});
-	});
-
-	describe(`"disdo( "hello World" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
-
-			assert.equal(disdo( true, true ) );
-
-		});
-	});
-
-
-});
 
 
 //: @end-bridge
