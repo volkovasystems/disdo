@@ -74,16 +74,16 @@ const path = require("path");
 describe( "disdo", ( ) => {
 
 	describe(`"disdo( "hello-world" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
-			assert.equal( 
+			assert.equal(
 				disdo( "hello-world" ), "hello world" );
 
 		});
 	});
 
 	describe(`"disdo( "hello_world" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello_world" ), "hello world" );
 
@@ -91,7 +91,7 @@ describe( "disdo", ( ) => {
 	});
 
 	describe(`"disdo( "helloWorld" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "helloWorld" ), "hello World" );
 
@@ -99,7 +99,7 @@ describe( "disdo", ( ) => {
 	});
 
 	describe(`"disdo( "hello world" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello world" ), "hello world" );
 
@@ -107,7 +107,7 @@ describe( "disdo", ( ) => {
 	});
 
 	describe(`"disdo( "hello World" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
@@ -122,18 +122,18 @@ describe( "disdo", ( ) => {
 
 //: @client:
 
-describe("disdo", ( ) => {
+describe( "disdo", ( ) => {
 
-	describe(`"disdo( "hello-world" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+	describe( `"disdo( "hello-world" )"`, ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello-world" ), "hello world" );
 
 		});
 	});
 
-	describe(`"disdo( "hello_world" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+	describe( `"disdo( "hello_world" )"`, ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello_world" ), "hello world" );
 
@@ -141,7 +141,7 @@ describe("disdo", ( ) => {
 	});
 
 	describe(`"disdo( "helloWorld" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "helloWorld" ), "hello World" );
 
@@ -149,7 +149,7 @@ describe("disdo", ( ) => {
 	});
 
 	describe(`"disdo( "hello world" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello world" ), "hello world" );
 
@@ -157,7 +157,7 @@ describe("disdo", ( ) => {
 	});
 
 	describe(`"disdo( "hello World" )"`, ( ) => {
-		it( "should have value 'hello world'", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
