@@ -73,7 +73,7 @@ const path = require("path");
 
 describe( "disdo", ( ) => {
 
-	describe(`"disdo( "hello-world" )"`, ( ) => {
+	describe( "`disdo( 'hello-world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal(
@@ -82,7 +82,8 @@ describe( "disdo", ( ) => {
 		});
 	});
 
-	describe(`"disdo( "hello_world" )"`, ( ) => {
+
+	describe( "`disdo( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello_world" ), "hello world" );
@@ -90,7 +91,8 @@ describe( "disdo", ( ) => {
 		});
 	});
 
-	describe(`"disdo( "helloWorld" )"`, ( ) => {
+
+	describe( "`disdo( 'helloWorld' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "helloWorld" ), "hello World" );
@@ -98,7 +100,8 @@ describe( "disdo", ( ) => {
 		});
 	});
 
-	describe(`"disdo( "hello world" )"`, ( ) => {
+
+	describe( "`disdo( 'hello world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello world" ), "hello world" );
@@ -106,14 +109,14 @@ describe( "disdo", ( ) => {
 		});
 	});
 
-	describe(`"disdo( "hello World" )"`, ( ) => {
+
+	describe( "`disdo( 'hello World' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
 		});
 	});
-
 });
 
 
@@ -124,15 +127,17 @@ describe( "disdo", ( ) => {
 
 describe( "disdo", ( ) => {
 
-	describe( `"disdo( "hello-world" )"`, ( ) => {
+	describe( "`disdo( 'hello-world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
-			assert.equal( disdo( "hello-world" ), "hello world" );
+			assert.equal(
+				disdo( "hello-world" ), "hello world" );
 
 		});
 	});
 
-	describe( `"disdo( "hello_world" )"`, ( ) => {
+
+	describe( "`disdo( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello_world" ), "hello world" );
@@ -140,7 +145,8 @@ describe( "disdo", ( ) => {
 		});
 	});
 
-	describe(`"disdo( "helloWorld" )"`, ( ) => {
+
+	describe( "`disdo( 'helloWorld' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "helloWorld" ), "hello World" );
@@ -148,7 +154,8 @@ describe( "disdo", ( ) => {
 		});
 	});
 
-	describe(`"disdo( "hello world" )"`, ( ) => {
+
+	describe( "`disdo( 'hello world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello world" ), "hello world" );
@@ -156,14 +163,14 @@ describe( "disdo", ( ) => {
 		});
 	});
 
-	describe(`"disdo( "hello World" )"`, ( ) => {
+
+	describe( "`disdo( 'hello World' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
 		});
 	});
-
 });
 
 //: @end-client

@@ -67,52 +67,57 @@ const disdo = require("./disdo.js");
 
 //: @server:
 
-describe("disdo", ( ) => {
+describe( "disdo", ( ) => {
 
-	describe(`"disdo( "hello-world" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
+	describe( "`disdo( 'hello-world' )`", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
-			assert.equal(disdo("hello-world"), "hello world" );
-
-		});
-	});
-
-	describe(`"disdo( "hello_world" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
-
-			assert.equal(disdo("hello_world"), "hello world" );
+			assert.equal(
+				disdo( "hello-world" ), "hello world" );
 
 		});
 	});
 
-	describe(`"disdo( "helloWorld" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
 
-			assert.equal(disdo("helloWorld"), "hello World" );
+	describe( "`disdo( 'hello_world' )`", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
 
-		});
-	});
-
-	describe(`"disdo( "hello world" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
-
-			assert.equal(disdo("hello world"), "hello world" );
+			assert.equal( disdo( "hello_world" ), "hello world" );
 
 		});
 	});
 
-	describe(`"disdo( "hello World" )"`, ( ) => {
-		it("should have value 'hello world'", ( ) => {
 
-			assert.equal(disdo("hello World"), "hello World" );
+	describe( "`disdo( 'helloWorld' )`", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
+
+			assert.equal( disdo( "helloWorld" ), "hello World" );
 
 		});
 	});
 
+
+	describe( "`disdo( 'hello world' )`", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
+
+			assert.equal( disdo( "hello world" ), "hello world" );
+
+		});
+	});
+
+
+	describe( "`disdo( 'hello World' )`", ( ) => {
+		it( "should be equal to 'hello world'", ( ) => {
+
+			assert.equal( disdo( "hello World" ), "hello World" );
+
+		});
+	});
 });
 
 
 //: @end-server
+
 
 
 
