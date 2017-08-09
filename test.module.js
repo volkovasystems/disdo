@@ -55,18 +55,18 @@
 	@end-include
 */
 
-const assert = require("should");
+const assert = require( "should" );
 
 //: @server:
-const disdo = require("./disdo.js");
+const disdo = require( "./disdo.js" );
 //: @end-server
 
 //: @client:
-const disdo = require("./disdo.support.js");
+const disdo = require( "./disdo.support.js" );
 //: @end-client
 
 //: @bridge:
-const path = require("path");
+const path = require( "path" );
 //: @end-bridge
 
 //: @server:
@@ -76,11 +76,10 @@ describe( "disdo", ( ) => {
 	describe( "`disdo( 'hello-world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
-			assert.equal(
-				disdo( "hello-world" ), "hello world" );
+			assert.equal( disdo( "hello-world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello_world' )`", ( ) => {
@@ -88,8 +87,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello_world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'helloWorld' )`", ( ) => {
@@ -97,8 +96,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "helloWorld" ), "hello World" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello world' )`", ( ) => {
@@ -106,8 +105,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello World' )`", ( ) => {
@@ -115,8 +114,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
-		});
-	});
+		} );
+	} );
 });
 
 
@@ -130,11 +129,10 @@ describe( "disdo", ( ) => {
 	describe( "`disdo( 'hello-world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
-			assert.equal(
-				disdo( "hello-world" ), "hello world" );
+			assert.equal( disdo( "hello-world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello_world' )`", ( ) => {
@@ -142,8 +140,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello_world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'helloWorld' )`", ( ) => {
@@ -151,8 +149,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "helloWorld" ), "hello World" );
 
-		});
-	});
+		} );
+	}  );
 
 
 	describe( "`disdo( 'hello world' )`", ( ) => {
@@ -160,8 +158,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello World' )`", ( ) => {
@@ -169,8 +167,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
-		});
-	});
+		} );
+	} );
 });
 
 //: @end-client
@@ -182,7 +180,7 @@ describe( "disdo", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( `"disdo( "hello-world" )"`, ( ) => {
+	describe( "`disdo( 'hello-world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
@@ -199,7 +197,7 @@ describe( "disdo", ( ) => {
 	} );
 
 
-	describe( `"disdo( "hello_world" )"`, ( ) => {
+	describe( "`disdo( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
@@ -216,7 +214,7 @@ describe( "disdo", ( ) => {
 	} );
 
 
-	describe( `"disdo( "helloWorld" )"`, ( ) => {
+	describe( "`disdo( 'helloWorld' )`", ( ) => {
 		it( "should be equal to 'hello World'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
@@ -233,7 +231,7 @@ describe( "disdo", ( ) => {
 	} );
 
 
-	describe( `"disdo( "hello world" )"`, ( ) => {
+	describe( "`disdo( 'hello world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
@@ -250,7 +248,7 @@ describe( "disdo", ( ) => {
 	} );
 
 
-	describe( `"disdo( "hello World" )"`, ( ) => {
+	describe( "`disdo( 'hello World' )`", ( ) => {
 		it( "should be equal to 'hello World'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
