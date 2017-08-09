@@ -1,88 +1,88 @@
 {
-  "stats": {
-    "suites": 6,
-    "tests": 5,
-    "passes": 5,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-06T22:07:58.150Z",
-    "end": "2017-08-06T22:07:58.167Z",
-    "duration": 17
-  },
-  "tests": [
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello-world' )` should be equal to 'hello world'",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello_world' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'helloWorld' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello world' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello World' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello-world' )` should be equal to 'hello world'",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello_world' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'helloWorld' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello world' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello world'",
-      "fullTitle": "disdo `disdo( 'hello World' )` should be equal to 'hello world'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 6,
+		"tests": 5,
+		"passes": 5,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-09T02:23:51.274Z",
+		"end": "2017-08-09T02:23:51.279Z",
+		"duration": 5
+	},
+	"tests": [
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello-world' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello_world' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'helloWorld' )` should be equal to 'hello world'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello world' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello World' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello-world' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello_world' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'helloWorld' )` should be equal to 'hello world'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello world' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello world'",
+			"fullTitle": "disdo `disdo( 'hello World' )` should be equal to 'hello world'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

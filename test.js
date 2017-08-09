@@ -55,10 +55,10 @@
 	@end-include
 */
 
-const assert = require("should");
+const assert = require( "should" );
 
 //: @server:
-const disdo = require("./disdo.js");
+const disdo = require( "./disdo.js" );
 //: @end-server
 
 
@@ -72,11 +72,10 @@ describe( "disdo", ( ) => {
 	describe( "`disdo( 'hello-world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
-			assert.equal(
-				disdo( "hello-world" ), "hello world" );
+			assert.equal( disdo( "hello-world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello_world' )`", ( ) => {
@@ -84,8 +83,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello_world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'helloWorld' )`", ( ) => {
@@ -93,8 +92,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "helloWorld" ), "hello World" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello world' )`", ( ) => {
@@ -102,8 +101,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello world" ), "hello world" );
 
-		});
-	});
+		} );
+	} );
 
 
 	describe( "`disdo( 'hello World' )`", ( ) => {
@@ -111,8 +110,8 @@ describe( "disdo", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
-		});
-	});
+		} );
+	} );
 });
 
 

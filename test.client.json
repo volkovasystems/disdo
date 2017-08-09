@@ -1,0 +1,212 @@
+{
+	"state": {
+		"passed": 5,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-09T02:23:52.355Z",
+	"end": "2017-08-09T02:25:08.581Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "disdo",
+			"duration": 0,
+			"start": "2017-08-09T02:25:08.119Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "disdo",
+			"duration": 282,
+			"start": "2017-08-09T02:25:08.119Z",
+			"end": "2017-08-09T02:25:08.401Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-09T02:25:08.120Z",
+					"end": "2017-08-09T02:25:08.121Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.249Z",
+					"end": "2017-08-09T02:25:08.249Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.250Z",
+					"end": "2017-08-09T02:25:08.250Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.293Z",
+					"end": "2017-08-09T02:25:08.293Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.293Z",
+					"end": "2017-08-09T02:25:08.293Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello World'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.330Z",
+					"end": "2017-08-09T02:25:08.330Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello World'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.330Z",
+					"end": "2017-08-09T02:25:08.331Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.365Z",
+					"end": "2017-08-09T02:25:08.365Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.365Z",
+					"end": "2017-08-09T02:25:08.365Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello World'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.401Z",
+					"end": "2017-08-09T02:25:08.401Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello World'"
+				},
+				{
+					"start": "2017-08-09T02:25:08.401Z",
+					"end": "2017-08-09T02:25:08.401Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "disdo"
+				}
+			]
+		},
+		{
+			"name": "`disdo( 'hello-world' )`",
+			"duration": 130,
+			"start": "2017-08-09T02:25:08.120Z",
+			"end": "2017-08-09T02:25:08.250Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello world'",
+					"start": "2017-08-09T02:25:08.120Z",
+					"end": "2017-08-09T02:25:08.249Z",
+					"duration": 129,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`disdo( 'hello_world' )`",
+			"duration": 43,
+			"start": "2017-08-09T02:25:08.250Z",
+			"end": "2017-08-09T02:25:08.293Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello world'",
+					"start": "2017-08-09T02:25:08.250Z",
+					"end": "2017-08-09T02:25:08.293Z",
+					"duration": 43,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`disdo( 'helloWorld' )`",
+			"duration": 37,
+			"start": "2017-08-09T02:25:08.293Z",
+			"end": "2017-08-09T02:25:08.330Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello World'",
+					"start": "2017-08-09T02:25:08.293Z",
+					"end": "2017-08-09T02:25:08.330Z",
+					"duration": 37,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`disdo( 'hello world' )`",
+			"duration": 35,
+			"start": "2017-08-09T02:25:08.330Z",
+			"end": "2017-08-09T02:25:08.365Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello world'",
+					"start": "2017-08-09T02:25:08.330Z",
+					"end": "2017-08-09T02:25:08.365Z",
+					"duration": 35,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`disdo( 'hello World' )`",
+			"duration": 36,
+			"start": "2017-08-09T02:25:08.365Z",
+			"end": "2017-08-09T02:25:08.401Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello World'",
+					"start": "2017-08-09T02:25:08.365Z",
+					"end": "2017-08-09T02:25:08.401Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
