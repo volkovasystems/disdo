@@ -81,7 +81,6 @@ describe( "disdo", ( ) => {
 		} );
 	} );
 
-
 	describe( "`disdo( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -89,7 +88,6 @@ describe( "disdo", ( ) => {
 
 		} );
 	} );
-
 
 	describe( "`disdo( 'helloWorld' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
@@ -99,7 +97,6 @@ describe( "disdo", ( ) => {
 		} );
 	} );
 
-
 	describe( "`disdo( 'hello world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -108,7 +105,6 @@ describe( "disdo", ( ) => {
 		} );
 	} );
 
-
 	describe( "`disdo( 'hello World' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -116,7 +112,8 @@ describe( "disdo", ( ) => {
 
 		} );
 	} );
-});
+
+} );
 
 
 //: @end-server
@@ -134,7 +131,6 @@ describe( "disdo", ( ) => {
 		} );
 	} );
 
-
 	describe( "`disdo( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -142,7 +138,6 @@ describe( "disdo", ( ) => {
 
 		} );
 	} );
-
 
 	describe( "`disdo( 'helloWorld' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
@@ -152,7 +147,6 @@ describe( "disdo", ( ) => {
 		} );
 	}  );
 
-
 	describe( "`disdo( 'hello world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -161,7 +155,6 @@ describe( "disdo", ( ) => {
 		} );
 	} );
 
-
 	describe( "`disdo( 'hello World' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -169,7 +162,8 @@ describe( "disdo", ( ) => {
 
 		} );
 	} );
-});
+
+} );
 
 //: @end-client
 
@@ -196,7 +190,6 @@ describe( "disdo", ( ) => {
 		} );
 	} );
 
-
 	describe( "`disdo( 'hello_world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -212,7 +205,6 @@ describe( "disdo", ( ) => {
 
 		} );
 	} );
-
 
 	describe( "`disdo( 'helloWorld' )`", ( ) => {
 		it( "should be equal to 'hello World'", ( ) => {
@@ -230,7 +222,6 @@ describe( "disdo", ( ) => {
 		} );
 	} );
 
-
 	describe( "`disdo( 'hello world' )`", ( ) => {
 		it( "should be equal to 'hello world'", ( ) => {
 
@@ -246,7 +237,6 @@ describe( "disdo", ( ) => {
 
 		} );
 	} );
-
 
 	describe( "`disdo( 'hello World' )`", ( ) => {
 		it( "should be equal to 'hello World'", ( ) => {
