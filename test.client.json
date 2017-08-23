@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-09T02:23:52.355Z",
-	"end": "2017-08-09T02:25:08.581Z",
+	"start": "2017-08-23T07:14:09.093Z",
+	"end": "2017-08-23T07:14:48.428Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,100 +28,100 @@
 		{
 			"name": "disdo",
 			"duration": 0,
-			"start": "2017-08-09T02:25:08.119Z",
+			"start": "2017-08-23T07:14:48.028Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "disdo",
-			"duration": 282,
-			"start": "2017-08-09T02:25:08.119Z",
-			"end": "2017-08-09T02:25:08.401Z",
+			"duration": 223,
+			"start": "2017-08-23T07:14:48.029Z",
+			"end": "2017-08-23T07:14:48.252Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-09T02:25:08.120Z",
-					"end": "2017-08-09T02:25:08.121Z",
+					"start": "2017-08-23T07:14:48.030Z",
+					"end": "2017-08-23T07:14:48.030Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-23T07:14:48.109Z",
+					"end": "2017-08-23T07:14:48.109Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-23T07:14:48.110Z",
+					"end": "2017-08-23T07:14:48.110Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-23T07:14:48.149Z",
+					"end": "2017-08-23T07:14:48.149Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello world'"
+				},
+				{
+					"start": "2017-08-23T07:14:48.149Z",
+					"end": "2017-08-23T07:14:48.150Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello World'"
+				},
+				{
+					"start": "2017-08-23T07:14:48.185Z",
+					"end": "2017-08-23T07:14:48.185Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "disdo",
+					"associatedTest": "should be equal to 'hello World'"
+				},
+				{
+					"start": "2017-08-23T07:14:48.185Z",
+					"end": "2017-08-23T07:14:48.186Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "disdo",
 					"associatedTest": "should be equal to 'hello world'"
 				},
 				{
-					"start": "2017-08-09T02:25:08.249Z",
-					"end": "2017-08-09T02:25:08.249Z",
+					"start": "2017-08-23T07:14:48.218Z",
+					"end": "2017-08-23T07:14:48.218Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "disdo",
 					"associatedTest": "should be equal to 'hello world'"
 				},
 				{
-					"start": "2017-08-09T02:25:08.250Z",
-					"end": "2017-08-09T02:25:08.250Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "disdo",
-					"associatedTest": "should be equal to 'hello world'"
-				},
-				{
-					"start": "2017-08-09T02:25:08.293Z",
-					"end": "2017-08-09T02:25:08.293Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "disdo",
-					"associatedTest": "should be equal to 'hello world'"
-				},
-				{
-					"start": "2017-08-09T02:25:08.293Z",
-					"end": "2017-08-09T02:25:08.293Z",
+					"start": "2017-08-23T07:14:48.218Z",
+					"end": "2017-08-23T07:14:48.218Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "disdo",
 					"associatedTest": "should be equal to 'hello World'"
 				},
 				{
-					"start": "2017-08-09T02:25:08.330Z",
-					"end": "2017-08-09T02:25:08.330Z",
+					"start": "2017-08-23T07:14:48.252Z",
+					"end": "2017-08-23T07:14:48.252Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "disdo",
 					"associatedTest": "should be equal to 'hello World'"
 				},
 				{
-					"start": "2017-08-09T02:25:08.330Z",
-					"end": "2017-08-09T02:25:08.331Z",
-					"duration": 1,
-					"title": "\"before each\" hook",
-					"associatedSuite": "disdo",
-					"associatedTest": "should be equal to 'hello world'"
-				},
-				{
-					"start": "2017-08-09T02:25:08.365Z",
-					"end": "2017-08-09T02:25:08.365Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "disdo",
-					"associatedTest": "should be equal to 'hello world'"
-				},
-				{
-					"start": "2017-08-09T02:25:08.365Z",
-					"end": "2017-08-09T02:25:08.365Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "disdo",
-					"associatedTest": "should be equal to 'hello World'"
-				},
-				{
-					"start": "2017-08-09T02:25:08.401Z",
-					"end": "2017-08-09T02:25:08.401Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "disdo",
-					"associatedTest": "should be equal to 'hello World'"
-				},
-				{
-					"start": "2017-08-09T02:25:08.401Z",
-					"end": "2017-08-09T02:25:08.401Z",
+					"start": "2017-08-23T07:14:48.252Z",
+					"end": "2017-08-23T07:14:48.252Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "disdo"
@@ -130,15 +130,15 @@
 		},
 		{
 			"name": "`disdo( 'hello-world' )`",
-			"duration": 130,
-			"start": "2017-08-09T02:25:08.120Z",
-			"end": "2017-08-09T02:25:08.250Z",
+			"duration": 81,
+			"start": "2017-08-23T07:14:48.029Z",
+			"end": "2017-08-23T07:14:48.110Z",
 			"tests": [
 				{
 					"name": "should be equal to 'hello world'",
-					"start": "2017-08-09T02:25:08.120Z",
-					"end": "2017-08-09T02:25:08.249Z",
-					"duration": 129,
+					"start": "2017-08-23T07:14:48.030Z",
+					"end": "2017-08-23T07:14:48.109Z",
+					"duration": 79,
 					"state": "pass"
 				}
 			],
@@ -146,15 +146,15 @@
 		},
 		{
 			"name": "`disdo( 'hello_world' )`",
-			"duration": 43,
-			"start": "2017-08-09T02:25:08.250Z",
-			"end": "2017-08-09T02:25:08.293Z",
+			"duration": 39,
+			"start": "2017-08-23T07:14:48.110Z",
+			"end": "2017-08-23T07:14:48.149Z",
 			"tests": [
 				{
 					"name": "should be equal to 'hello world'",
-					"start": "2017-08-09T02:25:08.250Z",
-					"end": "2017-08-09T02:25:08.293Z",
-					"duration": 43,
+					"start": "2017-08-23T07:14:48.110Z",
+					"end": "2017-08-23T07:14:48.149Z",
+					"duration": 39,
 					"state": "pass"
 				}
 			],
@@ -162,15 +162,15 @@
 		},
 		{
 			"name": "`disdo( 'helloWorld' )`",
-			"duration": 37,
-			"start": "2017-08-09T02:25:08.293Z",
-			"end": "2017-08-09T02:25:08.330Z",
+			"duration": 36,
+			"start": "2017-08-23T07:14:48.149Z",
+			"end": "2017-08-23T07:14:48.185Z",
 			"tests": [
 				{
 					"name": "should be equal to 'hello World'",
-					"start": "2017-08-09T02:25:08.293Z",
-					"end": "2017-08-09T02:25:08.330Z",
-					"duration": 37,
+					"start": "2017-08-23T07:14:48.149Z",
+					"end": "2017-08-23T07:14:48.185Z",
+					"duration": 36,
 					"state": "pass"
 				}
 			],
@@ -178,15 +178,15 @@
 		},
 		{
 			"name": "`disdo( 'hello world' )`",
-			"duration": 35,
-			"start": "2017-08-09T02:25:08.330Z",
-			"end": "2017-08-09T02:25:08.365Z",
+			"duration": 33,
+			"start": "2017-08-23T07:14:48.185Z",
+			"end": "2017-08-23T07:14:48.218Z",
 			"tests": [
 				{
 					"name": "should be equal to 'hello world'",
-					"start": "2017-08-09T02:25:08.330Z",
-					"end": "2017-08-09T02:25:08.365Z",
-					"duration": 35,
+					"start": "2017-08-23T07:14:48.185Z",
+					"end": "2017-08-23T07:14:48.217Z",
+					"duration": 32,
 					"state": "pass"
 				}
 			],
@@ -194,15 +194,15 @@
 		},
 		{
 			"name": "`disdo( 'hello World' )`",
-			"duration": 36,
-			"start": "2017-08-09T02:25:08.365Z",
-			"end": "2017-08-09T02:25:08.401Z",
+			"duration": 34,
+			"start": "2017-08-23T07:14:48.218Z",
+			"end": "2017-08-23T07:14:48.252Z",
 			"tests": [
 				{
 					"name": "should be equal to 'hello World'",
-					"start": "2017-08-09T02:25:08.365Z",
-					"end": "2017-08-09T02:25:08.401Z",
-					"duration": 36,
+					"start": "2017-08-23T07:14:48.218Z",
+					"end": "2017-08-23T07:14:48.252Z",
+					"duration": 34,
 					"state": "pass"
 				}
 			],

@@ -106,7 +106,7 @@ describe( "disdo", ( ) => {
 	} );
 
 	describe( "`disdo( 'hello World' )`", ( ) => {
-		it( "should be equal to 'hello world'", ( ) => {
+		it( "should be equal to 'hello World'", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
@@ -156,7 +156,7 @@ describe( "disdo", ( ) => {
 	} );
 
 	describe( "`disdo( 'hello World' )`", ( ) => {
-		it( "should be equal to 'hello world'", ( ) => {
+		it( "should be equal to 'hello World'", ( ) => {
 
 			assert.equal( disdo( "hello World" ), "hello World" );
 
